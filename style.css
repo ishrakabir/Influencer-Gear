@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-*{
-  margin: 0;
-  padding: 0;
-  /* overflow: hidden; */
+* {
+  box-sizing: border-box;
 }
 body {
   font-family: "Poppins", sans-serif;
-  
 }
 
 /* ----------------
@@ -57,7 +54,7 @@ header {
   border: none;
   transition: all 0.7s;
 }
-.container-text button:hover{
+.container-text button:hover {
   padding-left: 50px;
   transition: all 0.7s;
 }
@@ -84,7 +81,7 @@ header {
 }
 
 .hover-rotate:hover img {
-  transform: scale(1.1) ;
+  transform: scale(1.1);
 }
 
 /* ---------------
@@ -175,76 +172,74 @@ footer {
 /* -------------------
     Media Queries 
  -------------------*/
- /* tablets */
- @media screen and (max-width:992px) {
+/* tablets */
+@media screen and (max-width: 992px) {
   header {
     display: flex;
     justify-content: center;
   }
-  header .navbar{
+  header .navbar {
     display: none;
   }
-  .container
-  {
+  .container {
     display: flex;
-    flex-direction:column-reverse;
-   
+    flex-direction: column-reverse;
+
   }
-  .container-text{
+ 
+  .container-text {
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .container-text button{
+  .container-text button {
     margin-top: 30px;
     text-align: center;
   }
-  .icon{
-    grid-template-columns: repeat(5,1fr);
+  .icon {
+    grid-template-columns: repeat(5, 1fr);
   }
- .collection
- {
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 50px;
- }
- }
- /* ----------------
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ----------------
      mobile view 
  ----------------*/
-  @media screen and (max-width:688px) {
-    header,.icon,.container,.popularCollection{
-      margin: 60px 0px 30px 0px;
-    }
+@media screen and (max-width: 688px) {
+  header,
+  .icon,
+  .container,
+  .popularCollection {
+    margin: 60px 0px 30px 0px;
+  }
   header {
     /* margin-bottom: 30px; */
     display: flex;
     justify-content: center;
   }
-  header .navbar{
+  header .navbar {
     display: none;
   }
-  .container
-  {
+  .container {
     display: flex;
-    flex-direction:column-reverse;
-   
+    flex-direction: column-reverse;
   }
-  .container-text{
+  
+  .container-text {
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .container-text button{
+  .container-text button {
     margin-top: 30px;
     text-align: center;
   }
-  .icon{
-    grid-template-columns: repeat(3,1fr);
+  .icon {
+    grid-template-columns: repeat(3, 1fr);
   }
- .collection
- {
-  grid-template-columns: repeat(1,1fr);
-  /* grid-gap: 50px; */
- }
-
- }
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-gap: 50px; */
+  }
+}
