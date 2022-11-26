@@ -1,25 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-body{
-    margin: 20px 50px 0px 50px;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  
 }
 
- /* ----------------
+/* ----------------
       header
 ---------------- */
+
 header {
+  /* background-color: yellow; */
+  margin: 20px 100px 20px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .navbar {
   font-size: 1.2em;
-  /* margin: 10px; */
 }
-.navbar a{
-    text-decoration: none;
-    margin-left: 15px;
-    color: black;
+.navbar a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: black;
 }
+
+/* --------------
+   container 
+-------------- */
+
+.container {
+  /* background-color: yellow; */
+  margin: 20px 100px 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  align-items: center;
+}
+.container-text {
+  width: 50%;
+}
+.container-text h1 {
+  font-size: 52px;
+}
+.container-text button {
+  background-color: #e02c6d;
+  border-radius: 20px;
+  padding: 10px 30px 10px 15px;
+  color: #ffffff;
+  border: none;
+  transition: all 0.7s;
+}
+.container-text button:hover{
+  padding-left: 50px;
+  transition: all 0.7s;
+}
+.container-img img {
+  width: 100%;
+}
+.container-img {
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.hover-rotate {
+  overflow: hidden;
+  margin: 8px;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.hover-rotate img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hover-rotate:hover img {
+  transform: scale(1.1) ;
+}
+
+/* ---------------
+       icons 
+--------------- */
+.icons {
+  /* background-color: yellow; */
+  margin: 20px 100px 20px 100px;
+  /* margin: 30px 0px 20px 0px; */
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* ---------------
+   collections 
+---------------*/
+.popularCollection {
+  margin: 20px 100px 20px 100px;
+  /* background-color: yellow; */
+  margin-top: 100px;
+}
+.collections {
+  display: flex;
+  justify-content: center;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.card {
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 300ms ease-in-out;
+}
+
+.card img {
+  width: 100%;
+}
+.card:hover {
+  /* margin-bottom: 2px; */
+  cursor: pointer;
+  box-shadow: 28px 12px 15px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in;
+}
+.star {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.detail {
+  margin-top: 0px;
+}
+.fa-star,
+.fa-star-half-stroke {
+  color: orange;
+}
+
+.popular {
+  text-align: center;
+}
+
+/* --------------
+      footer
+--------------- */
+footer {
+  text-align: center;
+  background-color: rgb(18, 18, 70);
+  color: rgba(255, 255, 255, 0.829);
+  padding: 40px;
+}
+
+/* -------------------
+    Media Queries 
+ -------------------*/
+ /* tablets */
+ @media screen and (max-width:992px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .navbar{
+    display: none;
+  }
+  .container
+  {
+    display: flex;
+    flex-direction:column-reverse;
+   
+  }
+  .container-text{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .container-text button{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .icon{
+    grid-template-columns: repeat(5,1fr);
+  }
+ .collection
+ {
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+ }
+ }
+  @media screen and (max-width:688px) {
+    header,.icon,.container,.popularCollection{
+      margin: 60px 0px 30px 0px;
+    }
+  header {
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+  }
+  header .navbar{
+    display: none;
+  }
+  .container
+  {
+    display: flex;
+    flex-direction:column-reverse;
+   
+  }
+  .container-text{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .container-text button{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .icon{
+    grid-template-columns: repeat(3,1fr);
+  }
+ .collection
+ {
+  grid-template-columns: repeat(1,1fr);
+  /* grid-gap: 50px; */
+ }
+
+ }
