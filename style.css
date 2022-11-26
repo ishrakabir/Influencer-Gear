@@ -208,6 +208,9 @@ footer {
   grid-gap: 50px;
  }
  }
+ /* ----------------
+     mobile view 
+ ----------------*/
   @media screen and (max-width:688px) {
     header,.icon,.container,.popularCollection{
       margin: 60px 0px 30px 0px;
