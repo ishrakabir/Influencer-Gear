@@ -12,11 +12,13 @@ body {
 
 header {
   /* background-color: yellow; */
+
   margin: 20px 100px 20px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar {
   font-size: 1.2em;
 }
@@ -48,11 +50,12 @@ header {
 }
 .container-text button {
   background-color: #e02c6d;
-  border-radius: 20px;
+  border-radius: 26px;
   padding: 10px 30px 10px 15px;
   color: #ffffff;
   border: none;
   transition: all 0.7s;
+  font-size: 23px;
 }
 .container-text button:hover {
   padding-left: 50px;
@@ -88,9 +91,7 @@ header {
        icons 
 --------------- */
 .icons {
-  /* background-color: yellow; */
   margin: 20px 100px 20px 100px;
-  /* margin: 30px 0px 20px 0px; */
   display: flex;
   justify-content: center;
 }
@@ -115,7 +116,6 @@ hr {
 ---------------*/
 .popularCollection {
   margin: 20px 100px 20px 100px;
-  /* background-color: yellow; */
   margin-top: 100px;
 }
 .collections {
@@ -137,9 +137,9 @@ hr {
   width: 100%;
 }
 .card:hover {
-  /* margin-bottom: 2px; */
+
   cursor: pointer;
-  box-shadow: 28px 12px 15px 0px rgba(0, 0, 0, 0.2);
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 20px 10px 10px;
   transition: all 0.3s ease-in;
 }
 .star {
@@ -157,7 +157,29 @@ hr {
 
 .popular {
   text-align: center;
+  font-size: 2em;
 }
+.dollar{
+  font-size: 30px;
+}
+.container1 {
+     margin: 20px 100px 20px 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  }
+  .container1 .container-text{
+    width: 100%;
+  }
+  
+  video{
+    width: 100%;
+  height: auto;
+  }
 
 /* --------------
       footer
@@ -202,6 +224,7 @@ footer {
   .collection {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 }
 /* ----------------
      mobile view 
@@ -214,7 +237,6 @@ footer {
     margin: 60px 0px 30px 0px;
   }
   header {
-    /* margin-bottom: 30px; */
     display: flex;
     justify-content: center;
   }
@@ -240,6 +262,20 @@ footer {
   }
   .collection {
     grid-template-columns: repeat(1, 1fr);
-    /* grid-gap: 50px; */
+ 
   }
+   
+    .container1{
+      margin: 0;
+    }
+    .container1 h1{
+      font-size: 1em;
+    }
+    .container1 p{
+      font-size: 0.9em;
+    }
+    .container1 button{
+      /* width: 100%; */
+      font-size: .7em;
+    }
 }
